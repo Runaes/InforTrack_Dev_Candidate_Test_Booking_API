@@ -22,11 +22,13 @@ namespace InforTrack_Dev_Candidate_Test_Booking_API.Controllers
             return bookings.BookingsList;
         }
 
-        [HttpGet]
-        public ActionResult ClearBookings()
+        [HttpPost("{confirm}")]
+        public ActionResult ClearBookings(string confirm)
         {
-            bookings = new Bookings(new BlankTimeProvider());
-
+            if (!string.IsNullOrEmpty(confirm))
+            {
+                bookings = new Bookings(new BlankTimeProvider());
+            }
             return Ok();
         }
 
