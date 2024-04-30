@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InforTrack_Dev_Candidate_Test_Booking_API.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace InforTrack_Dev_Candidate_Test_Booking_API
+namespace InforTrack_Dev_Candidate_Test_Booking_API.Exceptions
 {
     [Serializable]
     internal class LateSubmissionException : Exception

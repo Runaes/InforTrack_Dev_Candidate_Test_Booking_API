@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InforTrack_Dev_Candidate_Test_Booking_API
+namespace InforTrack_Dev_Candidate_Test_Booking_API.Exceptions
 {
     [Serializable]
     internal class TimeConflictException : Exception
