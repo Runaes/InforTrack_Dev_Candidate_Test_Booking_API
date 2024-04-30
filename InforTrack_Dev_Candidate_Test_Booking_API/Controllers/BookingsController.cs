@@ -21,6 +21,14 @@ namespace InforTrack_Dev_Candidate_Test_Booking_API.Controllers
             return bookings.BookingsList;
         }
 
+        [HttpGet]
+        public ActionResult ClearBookings()
+        {
+            bookings = new Bookings(new BlankTimeProvider());
+
+            return Ok();
+        }
+
         [HttpGet("{id}")]
         public ActionResult<Booking> GetBooking(string id)
         {
